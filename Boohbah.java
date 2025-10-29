@@ -1,22 +1,22 @@
 public class Boohbah {
-    private String name = "";
+    private String name = ""; //defines private variables
     private String danceMove = "";
 
     public Boohbah(String name, String danceMove) {
-        this.name = name;
+        this.name = name; // constructor
         this.danceMove = danceMove;
     }
 
     public String getName(){
-        return name;
+        return name; // name getter
     }
 
         public String getDanceMove(){
-        return danceMove;
+        return danceMove; // dance getter
     }
 
     public String performMove() {
-        String result = name + " performs " + danceMove;
+        String result = name + " performs " + danceMove; // returns boohbah + dancemove in a formatted string
         return result;
     }
 }
