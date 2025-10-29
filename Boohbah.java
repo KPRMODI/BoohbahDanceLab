@@ -1,21 +1,21 @@
 public class Boohbah {
-    private static String name = "";
-    private static String danceMove = "";
+    private String name = "";
+    private String danceMove = "";
 
     public Boohbah(String name, String danceMove) {
         this.name = name;
         this.danceMove = danceMove;
     }
 
-    public String getname(){
+    public String getName(){
         return name;
     }
 
-        public String getdanceMove(){
+        public String getDanceMove(){
         return danceMove;
     }
 
-    public static String performMove() {
+    public String performMove() {
         String result = name + " performs " + danceMove;
         return result;
     }

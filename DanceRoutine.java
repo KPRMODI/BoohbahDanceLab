@@ -6,17 +6,19 @@ public class DanceRoutine {
     }
 
     public String buildRoutine(){
-        StringBuilder sb = new StringBuilder();
+        StringBuilder routine = new StringBuilder();
         for (int i = 0; i < 3; i++) {
-            sb.append(boohbahs[i].performMove() + "\n");
+            routine.append(boohbahs[i].performMove() + "\n");
         }
-        return sb.toString();
+        return routine.toString();
     }
 
-    public StringBuilder modifyRoutine(){
-        StringBuilder sb = new StringBuilder();
-        //sb.replace("performs", "dances to", boohbahs);
-        return sb;
+    public String modifyRoutine(){
+        StringBuilder modifiedRoutine = new StringBuilder();
+        for (int i = 0; i < 3; i++) {
+            modifiedRoutine.append(boohbahs[i].performMove() + "\n");
     }
-
+    String Mod = modifiedRoutine.toString().replace("performs", "dances to");
+    return Mod;
+    }
 }
