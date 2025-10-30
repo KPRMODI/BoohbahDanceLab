@@ -21,4 +21,14 @@ public class DanceRoutine {
     String Mod = modifiedRoutine.toString().replace("performs", "dances to");//converts string builder to string
     return Mod; //returns modified version
     }
+
+    public String remixRoutine(){
+        StringBuilder remix = new StringBuilder(buildRoutine());
+        remix.insert(0, "--- REMIX ---\n");
+        remix.delete(remix.length()-1, remix.length());
+        remix.append("\n(Backwards Boohbah Shuffle! )");
+        remix.reverse();
+
+        return remix.toString(); // returns string 
+    }
 }

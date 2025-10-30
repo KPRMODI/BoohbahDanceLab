@@ -9,5 +9,6 @@ public class BoohbahDanceTest {
 
         System.out.println("Original Routine: " + "\n" + Routine.buildRoutine()); // prints original
         System.out.println("Modified Routine: " + "\n" + Routine.modifyRoutine()); // prints modify
+        System.out.println("Remixed Routine: " + "\n" + Routine.remixRoutine()); // prints remix
     }
 }
